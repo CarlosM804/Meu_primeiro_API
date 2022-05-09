@@ -1,0 +1,33 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "caderno rosa",
+    "price": 5
+    
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/224344c6-c3ff-4069-9cb4-b8c7d5f4be92
+
+###
+
+PUT http://localhost:4002/products/12e3960d-71b5-40d9-b16b-a1ed3adcfafb
+content-type: application/json
+
+{
+    "name":"Caderno rosa",
+    "price": 12
+}
+
+###
+
+DELETE http://localhost:4002/products/ff8db488-86fd-4cb6-b0d4-7d52d8cc3b62
+
+
+// só mudar os parametro de acordo com o id de cada produto
